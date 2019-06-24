@@ -3,8 +3,10 @@ php:
   - '7.3'
 
 before_install: true
-install: true
+install: true 
+  #- composer: install
 before_script: true
-script: true
+script: 
+  - phpunit
 after_script: true
 #deploy: true
