@@ -2,7 +2,7 @@ language: php
 php: 
   - '7.3'
 
-before_instal: true
+before_install: true
 install: true
 before_script: true
 script: true
