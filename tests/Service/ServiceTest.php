@@ -15,8 +15,3 @@ class CalculatorTest extends TestCase
         $this->assertEquals(3, $result);
     }
 }
-Réduire
-
-
-
-14 h 38
