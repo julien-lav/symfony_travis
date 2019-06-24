@@ -7,4 +7,4 @@ install: true
 before_script: true
 script: true
 after_script: true
-deploy: true
+#deploy: true
