@@ -1,10 +1,9 @@
 language: php
 php: 
   - '7.3'
-
 #before_install: true
 install: true 
-  - composer: install
+  - composer install
 before_script: true
 script: 
   - phpunit tests
