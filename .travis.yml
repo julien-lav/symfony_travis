@@ -2,9 +2,9 @@ language: php
 php: 
   - '7.3'
 
-before_instal: false
-install: false
-before_script: false
-script: false
-after_script: false
-deploy: false
+before_instal: true
+install: true
+before_script: true
+script: true
+after_script: true
+deploy: true
