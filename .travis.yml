@@ -6,9 +6,13 @@ php:
 install: 
   - composer install
 
-before_script: true
+before_script:
+  - mkdir -p "$HOME/.php-cs-fixer"
+  - mkdir -p build/logs
 
-script: 
+script:
+  - php-cs-fixer fix --config=.php_cs --verbose --diff --dry-run; fi
   - phpunit tests
 
 after_script: true
+
