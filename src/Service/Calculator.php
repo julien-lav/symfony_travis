@@ -10,4 +10,4 @@ class Calculator
     {
         return $firstNumber + $secondeNumber;
     }
-};
+}
