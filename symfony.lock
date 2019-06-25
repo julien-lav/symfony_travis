@@ -14,7 +14,7 @@
             "ref": "cb4152ebcadbe620ea2261da1a1c5a9b8cea7672"
         },
         "files": [
-            "./config/routes/annotations.yaml"
+            "config/routes/annotations.yaml"
         ]
     },
     "doctrine/lexer": {
@@ -29,7 +29,7 @@
             "ref": "cc05ab6abf6894bddb9bbd6a252459010ebe040b"
         },
         "files": [
-            "./.php_cs.dist"
+            ".php_cs.dist"
         ]
     },
     "fzaninotto/faker": {
@@ -142,11 +142,11 @@
             "ref": "b0582341f1df39aaf3a9a866cdbe49937da35984"
         },
         "files": [
-            "./.env.test",
-            "./bin/phpunit",
-            "./config/bootstrap.php",
-            "./phpunit.xml.dist",
-            "./tests/.gitignore"
+            ".env.test",
+            "bin/phpunit",
+            "config/bootstrap.php",
+            "phpunit.xml.dist",
+            "tests/.gitignore"
         ]
     },
     "symfony/polyfill-intl-idn": {
@@ -187,15 +187,6 @@
     },
     "symfony/var-exporter": {
         "version": "v4.3.1"
-    },
-    "symfony/web-server-bundle": {
-        "version": "3.3",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "3.3",
-            "ref": "dae9b39fd6717970be7601101ce5aa960bf53d9a"
-        }
     },
     "symfony/yaml": {
         "version": "v4.3.1"
