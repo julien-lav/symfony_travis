@@ -3,15 +3,13 @@ language: php
 php: 
   - '7.3'
 
-
 install: 
-  #- composer require friendsofphp/php-cs-fixer --dev
   - composer install  
 
 before_script: true
 
 script:
-  - php-cs-fixer fix --dry-run --diff --verbose
+  - .:vendor/bin/php-cs-fixer fix --dry-run --diff --verbose
   - phpunit tests
 
 after_script: true
