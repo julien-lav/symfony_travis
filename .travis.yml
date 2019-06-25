@@ -4,14 +4,11 @@ php:
   - '7.3'
 
 
-
 install: 
   #- composer require friendsofphp/php-cs-fixer --dev
   - composer install  
 
 before_script: true
-  # mkdir -p "$HOME/.php-cs-fixer"
-  # mkdir -p build/logs
 
 script:
   - php-cs-fixer fix --dry-run --diff --verbose
