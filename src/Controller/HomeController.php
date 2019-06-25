@@ -12,8 +12,5 @@ class HomeController
     {
         return new Response('ok');
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 74e355b473e7285092464aa6ef3dc651d1d74cca
+
