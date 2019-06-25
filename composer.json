@@ -59,10 +59,7 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.15",
-<<<<<<< HEAD
-        "fzaninotto/faker": "1.7",
-=======
->>>>>>> 74e355b473e7285092464aa6ef3dc651d1d74cca
+        "fzaninotto/faker": "1.8",
         "symfony/phpunit-bridge": "^4.3",
         "symfony/web-server-bundle": "4.3.*"
     }
