@@ -16,6 +16,7 @@ script:
   - ./vendor/bin/php-cs-fixer fix --dry-run --diff --verbose
   - phpunit tests
 
-after_script: true
+after_script: 
+  - git push heroku master
 
 #travis cahce
