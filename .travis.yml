@@ -3,6 +3,8 @@ language: php
 php: 
   - '7.3'
 
+
+
 install: 
   #- composer require friendsofphp/php-cs-fixer --dev
   - composer install  
@@ -12,7 +14,7 @@ before_script:
   - mkdir -p build/logs
 
 script:
-  - .vendor/bin/php-cs-fixer fix --config=.php_cs --verbose --diff --dry-run
+  - .vendor/bin/php-cs-fixer fix --dry-run --diff --verbose
   - phpunit tests
 
 after_script: true
