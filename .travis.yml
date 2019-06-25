@@ -16,7 +16,10 @@ script:
   - ./vendor/bin/php-cs-fixer fix --dry-run --diff --verbose
   - phpunit tests
 
-after_script: 
-  - git push heroku master
+after_script: true
 
+deploy:
+  provider: heroku
+  api_key:
+    secure: 136913e6-a006-462b-8758-0f4d7421b2c7
 #travis cahce
