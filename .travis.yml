@@ -3,18 +3,17 @@ language: php
 php: 
   - '7.3'
 
-
+cache: 
+  directories:
+    - $HOME/.composer/cache
 
 install: 
-  #- composer require friendsofphp/php-cs-fixer --dev
   - composer install  
 
-before_script:
-  - mkdir -p "$HOME/.php-cs-fixer"
-  - mkdir -p build/logs
+before_script: true
 
 script:
-  - php-cs-fixer fix --config=.php_cs --verbose --diff --dry-run
+  - ./vendor/bin/php-cs-fixer fix --dry-run --diff --verbose
   - phpunit tests
 
 after_script: true
