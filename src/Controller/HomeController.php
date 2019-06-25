@@ -13,4 +13,3 @@ class HomeController
         return new Response('ok');
     }
 }
-
