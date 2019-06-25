@@ -9,9 +9,9 @@ install:
   #- composer require friendsofphp/php-cs-fixer --dev
   - composer install  
 
-before_script:
-  - mkdir -p "$HOME/.php-cs-fixer"
-  - mkdir -p build/logs
+before_script: true
+  # mkdir -p "$HOME/.php-cs-fixer"
+  # mkdir -p build/logs
 
 script:
   - .vendor/bin/php-cs-fixer fix --dry-run --diff --verbose
