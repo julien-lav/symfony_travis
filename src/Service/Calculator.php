@@ -6,8 +6,8 @@ namespace App\Service;
 
 class Calculator
 {
-	public function add(int $firstNumber, int $secondeNumber): int
-	{
-		return $firstNumber + $secondeNumber;
-	}
+    public function add(int $firstNumber, int $secondeNumber): int
+    {
+        return $firstNumber + $secondeNumber;
+    }
 }
