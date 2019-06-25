@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a8bfdcb1cd47d8c3537eecf45c747dee",
+    "content-hash": "e0d0c6a76a4491f5e728a1fd6b504996",
     "packages": [
         {
             "name": "psr/cache",
@@ -2026,16 +2026,16 @@
         },
         {
             "name": "fzaninotto/faker",
-            "version": "v1.7.0",
+            "version": "v1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "dd4564efb00c557559af29c2964fba764d0dfacc"
+                "reference": "f72816b43e74063c8b10357394b6bba8cb1c10de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/dd4564efb00c557559af29c2964fba764d0dfacc",
-                "reference": "dd4564efb00c557559af29c2964fba764d0dfacc",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/f72816b43e74063c8b10357394b6bba8cb1c10de",
+                "reference": "f72816b43e74063c8b10357394b6bba8cb1c10de",
                 "shasum": ""
             },
             "require": {
@@ -2043,12 +2043,14 @@
             },
             "require-dev": {
                 "ext-intl": "*",
-                "phpunit/phpunit": "^4.0 || ^5.0",
+                "phpunit/phpunit": "^4.8.35 || ^5.7",
                 "squizlabs/php_codesniffer": "^1.5"
             },
             "type": "library",
             "extra": {
-                "branch-alias": []
+                "branch-alias": {
+                    "dev-master": "1.8-dev"
+                }
             },
             "autoload": {
                 "psr-4": {
@@ -2070,7 +2072,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2017-08-15T16:34:15+00:00"
+            "time": "2018-07-12T10:23:15+00:00"
         },
         {
             "name": "php-cs-fixer/diff",
