@@ -1,25 +1,18 @@
 language: php
-
-php: 
-  - '7.3'
-
-cache: 
+php:
+- '7.3'
+cache:
   directories:
-    - $HOME/.composer/cache
-
-install: 
-  - composer install  
-
+  - "$HOME/.composer/cache"
+install:
+- composer install
 before_script: true
-
 script:
-  - ./vendor/bin/php-cs-fixer fix --dry-run --diff --verbose
-  - phpunit tests
-
+- "./vendor/bin/php-cs-fixer fix --dry-run --diff --verbose"
+- phpunit tests
 after_script: true
-
 deploy:
   provider: heroku
   api_key:
-    secure: "136913e6-a006-462b-8758-0f4d7421b2c7"
-   app: infinite-ocean-30547
+    secure: eVp2X34QPArXbfQ3iIFVi4ByQe2rbF4GuFRaWDqA4+iIKQgayanRYQOdw7CkoYyq4SeA88nJt4lQQjAU6wxgAKBW87dYRhUXZOKHTbBM+BKchyt/TG9LgopTpEH1D+yNziePTjCncGIhE9GlwY/XO6sNcnAcmz+ZuEf7mokeO9WfDDA1eO4iqB3TkgsIzbuCkLF95IgVej/LamX4wgJSDB1QVvz5Pd0M9pkx7+lOCXULmTkLwJQoD0hiED/9e9N9Q/1SxDNlZGdj77xzHbaASqRHzmsIHpSmO+MVoopGwdICbO2PIPJAjq7qBO29i6edWbJ87PEa9m4EpHpxDXWNhQpyW2NTgQLqIwD9egiuiO4srlRuBSiBIsYuiisBxC3RVY1eg52XyMLFmMhhbnqSKRIovBB5WhzY1mRMRR3RnYaxLqaZxLGZveqYDppR8irAbbG9mr3e5hES3XxuOphD3REK9/EZ0X0SGruO95GTKtTmn3kIuYP81ooA3xl12iFKZPKMBIY4gKxyU/PIDwLyfsPSfET78lM3ii3AlTHU3b7tQSkgvS0/evkZ63C+BS711irRZU0vjMbPe4hzpIq1uo4F+s0pVG0cuZPs9EZ/6nyqjuYWzevw54/m272VT5m0BSCV5SRk3r3jmf68ObUMtHinDHJPFfdxfn20+fpv1AM=
+  app: infinite-ocean-30547
