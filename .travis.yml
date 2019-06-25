@@ -3,16 +3,20 @@ language: php
 php: 
   - '7.3'
 
+
+
 install: 
-  - composer install
+  #- composer require friendsofphp/php-cs-fixer --dev
+  - composer install  
 
 before_script:
   - mkdir -p "$HOME/.php-cs-fixer"
   - mkdir -p build/logs
 
 script:
-  - php-cs-fixer fix --config=.php_cs --verbose --diff --dry-run; fi
+  - php-cs-fixer fix --config=.php_cs --verbose --diff --dry-run
   - phpunit tests
 
 after_script: true
 
+#travis cahce
