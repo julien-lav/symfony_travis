@@ -5,10 +5,7 @@
         "php": "^7.1.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
-<<<<<<< HEAD
-=======
         "fzaninotto/faker": "1.8",
->>>>>>> 74e355b473e7285092464aa6ef3dc651d1d74cca
         "symfony/console": "4.3.*",
         "symfony/dotenv": "4.3.*",
         "symfony/flex": "^1.1",
